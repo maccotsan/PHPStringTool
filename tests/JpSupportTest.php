@@ -15,7 +15,7 @@ namespace maccotsan\StringTool;
 class JpSupportTest extends \PHPUnit_Framework_TestCase
 {
 	/**
-	 * 文字列の改行コードを揃える
+	 * 文字列中の半角文字を全角文字に揃える
 	 */
 	public function testConvertSingle2DoubleByte()
 	{
