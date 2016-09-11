@@ -1,0 +1,33 @@
+{
+    "name": "maccotsan/stringtool",
+    "description": "",
+    "keywords": ["stringtool"],
+    "type": "library",
+    "homepage": "https://github.com/maccotsan/PHPStringTool/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "maccotsan",
+            "email": "maccotsan@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "maccotsan\\StringTool\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "maccotsan\\StringTool\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "./vendor/bin/phpunit"
+    }
+}
