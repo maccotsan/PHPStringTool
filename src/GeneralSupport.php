@@ -23,6 +23,6 @@ class GeneralSupport
 	 */
 	public static function convertEOL($string, $to = "\n")
 	{
-    	return preg_replace("/\r\n|\r|\n/", $to, $string);
+		return preg_replace("/\r\n|\r|\n/", $to, $string);
 	}
 }

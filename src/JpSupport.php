@@ -17,7 +17,7 @@ class JpSupport
 	/**
 	 * 文字列中の半角文字を全角文字に揃える
 	 *
-	 * @param string $string 文字列
+	 * @param string $str 文字列
 	 * @return string 文字列
 	 */
 	public static function convertSingle2DoubleByte($str)
