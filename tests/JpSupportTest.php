@@ -19,15 +19,31 @@ class JpSupportTest extends \PHPUnit_Framework_TestCase
 	 */
 	public function testConvertSingle2DoubleByte()
 	{
-		$str = "ｱｲｳｴｵｶｷｸｹｺｻｼｽｾｿﾀﾁﾂﾃﾄﾅﾆﾇﾈﾉﾊﾋﾌﾍﾎﾏﾐﾑﾒﾓﾔﾕﾖﾗﾘﾙﾚﾛﾜｦﾝｧｨｩｪｫｬｭｮｯｰﾞﾟ｡｢｣､･ｶﾞｷﾞｸﾞｹﾞｺﾞｻﾞｼﾞｽﾞｾﾞｿﾞﾀﾞﾁﾞﾂﾞﾃﾞﾄﾞﾊﾞﾊﾟﾋﾞﾋﾟﾌﾞﾌﾟﾍﾞﾍﾟﾎﾞﾎﾟｳﾞﾜﾞｦﾞ";
-		$expected = "アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲンァィゥェォャュョッー゛゜。「」、・ガギグゲゴザジズゼゾダヂヅデドバパビピブプベペボポヴワ゛ヲ゛";
+		$str = "ｱｲｳｴｵｶｷｸｹｺｻｼｽｾｿﾀﾁﾂﾃﾄﾅﾆﾇﾈﾉﾊﾋﾌﾍﾎﾏﾐﾑﾒﾓﾔﾕﾖﾗﾘﾙﾚﾛﾜｦﾝｧｨｩｪｫｬｭｮｯ";
+		$expected = "アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲンァィゥェォャュョッ";
 		$ret = JpSupport::convertSingle2DoubleByte($str);
 		$this->assertEquals($expected, $ret);
 
-		$str = "!\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~";
-		$expected = "！”＃＄％＆'（）＊＋，－．／０１２３４５６７８９：；＜＝＞？＠ＡＢＣＤＥＦＧＨＩＪＫＬＭＮＯＰＱＲＳＴＵＶＷＸＹＺ［＼］＾＿｀ａｂｃｄｅｆｇｈｉｊｋｌｍｎｏｐｑｒｓｔｕｖｗｘｙｚ｛｜｝〜";
+		$str = "ｰﾞﾟ｡｢｣､･ｶﾞｷﾞｸﾞｹﾞｺﾞｻﾞｼﾞｽﾞｾﾞｿﾞﾀﾞﾁﾞﾂﾞﾃﾞﾄﾞﾊﾞﾊﾟﾋﾞﾋﾟﾌﾞﾌﾟﾍﾞﾍﾟﾎﾞﾎﾟｳﾞﾜﾞｦﾞ";
+		$expected = "ー゛゜。「」、・ガギグゲゴザジズゼゾダヂヅデドバパビピブプベペボポヴワ゛ヲ゛";
 		$ret = JpSupport::convertSingle2DoubleByte($str);
 		$this->assertEquals($expected, $ret);
+
+		$str = "!\"#$%&'()*+,-./0123456789:;<=>?@";
+		$expected = "！”＃＄％＆'（）＊＋，－．／０１２３４５６７８９：；＜＝＞？＠";
+		$ret = JpSupport::convertSingle2DoubleByte($str);
+		$this->assertEquals($expected, $ret);
+
+		$str = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+		$expected = "ＡＢＣＤＥＦＧＨＩＪＫＬＭＮＯＰＱＲＳＴＵＶＷＸＹＺ";
+		$ret = JpSupport::convertSingle2DoubleByte($str);
+		$this->assertEquals($expected, $ret);
+
+		$str = "[\]^_`abcdefghijklmnopqrstuvwxyz{|}~";
+		$expected = "［＼］＾＿｀ａｂｃｄｅｆｇｈｉｊｋｌｍｎｏｐｑｒｓｔｕｖｗｘｙｚ｛｜｝〜";
+		$ret = JpSupport::convertSingle2DoubleByte($str);
+		$this->assertEquals($expected, $ret);
+
 
 		$str = " ";
 		$expected = "　";
