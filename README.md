@@ -1,5 +1,7 @@
 # maccotsan\StringTool
 
+[![Build Status](https://travis-ci.org/maccotsan/PHPStringTool.svg?branch=master)](https://travis-ci.org/maccotsan/PHPStringTool)
+
 ## Install
 please rewrite your composer.json.
 ````
