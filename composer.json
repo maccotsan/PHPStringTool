@@ -35,7 +35,6 @@
 			"phpcs --standard=ruleset.xml src/* tests/*"
 		],
         "doc": [
-            "rm -r docs",
             "vendor/bin/phpdoc -d src -t docs --template=abstract"
         ]
     }
