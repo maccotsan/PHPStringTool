@@ -33,6 +33,10 @@
         "cs": [
 			"phpcs --config-set encoding utf-8",
 			"phpcs --standard=ruleset.xml src/* tests/*"
-		]
+		],
+        "doc": [
+            "rm -r docs",
+            "vendor/bin/phpdoc -d src -t docs --template=abstract"
+        ]
     }
 }

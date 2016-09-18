@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project title="API Documentation" version="2.8.5">
+  <partials/>
+  <file path="GeneralSupport.php" generated-path="GeneralSupport.html" hash="fee69cf2f41d2877581cbd6554c9026e" package="Default">
+    <docblock line="0">
+      <description>maccotsan/StringTool</description>
+      <long-description></long-description>
+      <tag name="copyright" line="0" description="2016 maccotsan &lt;maccotsan@gmail.com&gt;"/>
+      <tag name="license" line="0" description="The MIT License (MIT)"/>
+      <tag name="package" line="0" description="Default"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="maccotsan\StringTool" line="15" package="maccotsan\StringTool">
+      <extends/>
+      <name>GeneralSupport</name>
+      <full_name>\maccotsan\StringTool\GeneralSupport</full_name>
+      <docblock line="15">
+        <description>Class GeneralSupport</description>
+        <long-description></long-description>
+        <tag name="package" line="15" description="maccotsan\StringTool"/>
+      </docblock>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="maccotsan\StringTool" line="24" package="maccotsan\StringTool">
+        <name>convertEOL</name>
+        <full_name>\maccotsan\StringTool\GeneralSupport::convertEOL()</full_name>
+        <docblock line="24">
+          <description>文字列の改行コードを揃える</description>
+          <long-description></long-description>
+          <tag name="param" line="24" description="&lt;p&gt;文字列&lt;/p&gt;" type="string" variable="$string">
+            <type>string</type>
+          </tag>
+          <tag name="param" line="24" description="&lt;p&gt;変換後の改行コード&lt;/p&gt;" type="string" variable="$to">
+            <type>string</type>
+          </tag>
+          <tag name="return" line="24" description="文字列" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$string</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$to</name>
+          <default>"\n"</default>
+          <type>string</type>
+        </argument>
+      </method>
+    </class>
+    <source>eJxtkDFLw0AUx+fcp3gEh7YUow4urVoQEaHi0I4BOY8zCSZ3x+UiiO3QdrDFQkHEDk6Cqy5OgvhljgQ/hteYtoOZ7t69////u/eaB8IXyKnVENQgwoRwFWPmdJQMmNflPDTvi1aLcHEjA89XsLO1vbuWQnN1bXkRDsJNwqP93BIGhLKYQtencHrShXZRV0xRNQoHIYYjGgtM6DrQXbMbaPmzwxDHMRxTRiUOO4kQXKqcYbxX2Cu35whS5rxF1iLYMgnZ0136Nk/Hcz14zx4/f16mevihR196NNHDh2w20oOxHt4vtLneECWOIM4psFGcq5QyjeKQvk6y2XP6Pf1P+XNIqhLJoCzOQZZILswyTRcrc1wmjKiAMyCcXVOpjs7aleIj9Zy2B7bL7CqyzJxWkSwk9c4lFaFZdsV2XOmynit7LnPs3FRfzlJtIKuP+ugXltzH/g==</source>
+  </file>
+  <file path="JpSupport.php" generated-path="JpSupport.html" hash="dfc462544885aba1bd0edb46c9e735db" package="Default">
+    <docblock line="0">
+      <description>maccotsan/StringTool</description>
+      <long-description></long-description>
+      <tag name="copyright" line="0" description="2016 maccotsan &lt;maccotsan@gmail.com&gt;"/>
+      <tag name="license" line="0" description="The MIT License (MIT)"/>
+      <tag name="package" line="0" description="Default"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="maccotsan\StringTool" line="15" package="maccotsan\StringTool">
+      <extends/>
+      <name>JpSupport</name>
+      <full_name>\maccotsan\StringTool\JpSupport</full_name>
+      <docblock line="15">
+        <description>Class JpSupport</description>
+        <long-description></long-description>
+        <tag name="package" line="15" description="maccotsan\StringTool"/>
+      </docblock>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="maccotsan\StringTool" line="23" package="maccotsan\StringTool">
+        <name>convertSingle2DoubleByte</name>
+        <full_name>\maccotsan\StringTool\JpSupport::convertSingle2DoubleByte()</full_name>
+        <docblock line="23">
+          <description>文字列中の半角文字を全角文字に揃える</description>
+          <long-description></long-description>
+          <tag name="param" line="23" description="&lt;p&gt;文字列&lt;/p&gt;" type="string" variable="$str">
+            <type>string</type>
+          </tag>
+          <tag name="return" line="23" description="文字列" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$str</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+    </class>
+    <source>eJydkU9LG0EYxs87n2IIwiZBuurBi//S6sV/pwRPgTAZp8mS3ZlhdyKIKG5sMbaKEFAR9SZYWozXHkL7XTrd4M2v4Ltr4hINCJ5m3/d9fs+z78z0nKxKZGWzCGexSygVyifcyivP5pWCEA70o1GOCrnp2ZWqwhNj45OJFE8/f+YqLrGdD1S4szHi2JRxn+FCleHVxQJe6dVpKDKgsBDixGW+JJQlhsUkewr1/2zeIb6Pl2S+LqXwVGwPWI1UhpOxO30BbSEjsjMA7p7uh7dnYfPs/+9bHbTDo2/3N62npm60wq8/kjL41T3e00FTN75HaIxDtkdc7Md5eATOxPFJ4DFV93hfMTC0kCHrZbgcmBIFx+c6p8oWHFPBN5in8oA4bGJBgIp92lQsHSVkkAELGCPrz21YF89gt1zqcaUa4STWjmLzY355zczADRqGZb0SZXRwE14fdI8vdHCiG4c6+KmDL/2N2+Hdn/Dv5bA0MC95TDrwZOlU0UxB0r/dc3MUDyoh+A3YTJkxe/UetliM4IdO5z3wTsTq3cthLMC9lxscges22kaPEAMtmw==</source>
+  </file>
+  <package name="Default" full_name="Default"/>
+  <package name="global" full_name="global"/>
+  <package name="maccotsan" full_name="maccotsan">
+    <package name="StringTool" full_name="maccotsan\StringTool"/>
+  </package>
+  <namespace name="maccotsan" full_name="maccotsan">
+    <namespace name="StringTool" full_name="maccotsan\StringTool"/>
+  </namespace>
+  <deprecated count="0"/>
+</project>
