@@ -26,4 +26,4 @@ build:
                 coverage:
                     file: 'some-file'
                     format: 'clover'
-            - phpcs-run --standard=ruleset.xml
+            - phpcs-run --standard=ruleset.xml src/* tests/*
