@@ -20,8 +20,10 @@ please rewrite your composer.json.
 ・・・
 ````
 
+## Document
+https://maccotsan.github.io/PHPStringTool/
 
-### UnitTest
+## UnitTest
 ````
 composer install --dev
 composer test
